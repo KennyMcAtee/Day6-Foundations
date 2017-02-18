@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kenny's not Kenneys Shoe Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="fullpage">
+      <div class="header_section">
+        <div class="img_logo">
+          <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <div class="menu1">
+          <ul class="top_menu">
+            <a class="menu_item"; href="#">Men</a>
+            <a class="menu_item"; href="#">Women</a>
+            <a class="menu_item"; href="#">Boys</a>
+            <a class="menu_item"; href="#">Girls</a>
+            <a class="menu_item"; href="#">Customize</a>
+          </ul>
+        </div>
+        <div class="spacer"></div>   <!-- Add empty space between menus -->
+        <div class="menu1">
+          <ul class="top_menu">
+            <a class="menu_item"; href="#">Help</a>
+            <a class="menu_item"; href="#">My Account</a>
+            <img class="cart_img"; src="images/cart.jpg"; alt="cart";>
+            <a class="menu_item"; href="#">Shopping Cart</a>
+          </ul>
+            <p id="cartQty"; class="menu_item">0</p>
+        </div>
+      </div>
+      <div class="promoted_section">
+        <a class="returntoall"; href="#">&#8592 BACK TO ALL SHOES</a>
+        <div style="display:flex">
+          <div class="promoted_left">
+            <img class="promoted_shoe"; src="images/shoe1.png"; alt="black shoe";>
+          </div>
+
+          <div class="promoted_right">
+            <p class="largest_font" style="display:block">Quick Sneakers</p>
+            <p class="promoted_season">Spring / Summer 2017</p>
+            <p class="dashedline">
+            <p class="review">These are Black "imitation" Converse All-Stars.  The Converse version are better known on the street as "Chuck Taylors". They may look nice even
+                              without the All-Star logo.  From a distance your friends will never know that you spent less for the same look that they did. Popular styles art
+                              bargain basement prices.  Check out all of our styles. </p>
+            <p class="dashedline">
+            <div>
+              <p class="promoted_cost">$120.00</p>
+
+              <button type="button" onclick="addToCart()" id="added" class=buttonText >Buy Now!</button>
+              <!--   a class="mybutton" href="#">Buy Now!</a>   -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product_details">
+        <div class="menu1">
+          <ul class="top_menu">
+            <span onclick="makeActive('#productDetails', '#detailContent')" id="productDetails" class="detail_menu_active">Product Details</span>
+            <span onclick="makeActive('#sizeFit', '#sizeFitDetails')" id="sizeFit" class="detail_menu_active">Size & Fit</span>
+
+
+        <!--    <a class="detail_menu"; href="#">Product Details</a>
+            <a class="detail_menu"; href="#">Size & Fit</a> -->
+          </ul>
+        </div>
+
+        <div class="spacer2"> </div>
+
+        <p class="review_font">Reviews</p>
+        <p id="star1" class="stars">&#9733</p>
+        <p id="star2" class="stars">&#9733</p>
+        <p id="star3" class="stars">&#9733</p>
+        <p id="star4" class="stars">&#9733</p>
+        <p id="star5" class="stars">&#9734</p>
+      </div>
+
+      <div class="product_info">
+        <hr>
+        <div id="detailContent" class="detail_menu_active">
+          <p class="prod_excite">Exciting Topic</p>
+          <p class="subject">Content Here</p>
+          <p class="topic"">Exciting Topic</p>
+          <p class="subject">Content Here</p>
+        </div>
+        <div id="sizeFit" class="dontShow">
+          <p class="topic">Find Your Shoe Size & Fit</p>
+          <p class="subject">Content Here</p>
+        </div>
+
+        <div id="custReview" class="dontShow">
+          <p class="topic">What Our Customers Are Saying</p>
+          <p class="subject">Dont take our word for it!  Read what our customers have
+                            been saying about this product. We quarantee you won't be
+                            disappointed in your purchase.</p>
+        </div>
+        <div class="rectitle">
+          <p class="shop_rec">Shop Recommended Shoes</p>
+        </div>
+      </div>
+      <div >
+        <div class="rec_section">
+          <div class="rec_img_container" >
+            <img class="rec_image" src="images/shoe2.png" alt="blue and Red hi-tops">
+            <p class="description">Funny Sneakers</p>
+            <a class="description" href="#">$120.00</a>
+            <p class="season_bottom" style="margin-left:0px;">Spring / Summer 2017</p>
+          </div>
+          <div class="rec_img_container">
+            <img class="rec_image" src="images/shoe3.png" alt="black red shoe">
+            <p class="description">Nibble Sneakers</p>
+            <a class="description" href="#">$120.00</a>
+            <p class="season_bottom">Spring / Summer 2017</p>
+          </div>
+          <div class="rec_img_container">
+            <img class="rec_image" src="images/shoe4.png" alt="All Blue Shoe">
+            <p class="description">Cute Sneakers</p>
+            <a class="description" href="#">$120.00</a>
+            <p class="season_bottom">Spring / Summer 2017</p>
+          </div>
+        </div>
+      </div>
+      <footer >
+        <div>
+        <img class="small_logo" src="images/logo.jpg" alt="Logo"; >
+        </div>
+        <div class="typeofperson">
+          <ul>
+            <a class="bottom_menu" href="#">Men</a>
+            <a class="bottom_menu" href="#">Women</a>
+            <a class="bottom_menu" href="#">Boys</a>
+            <a class="bottom_menu" href="#">Girls</a>
+            <a class="bottom_menu" href="#">Customize</a>
+          </ul>
+        </div>
+        <div class="spacer3"></div>
+        <a class="bottom_info" href="#">Shipping</a>
+        <a class="bottom_info" href="#">Terms & Conditions</a>
+        <p class="copyright">&#169 Copyright 2017, Sneaker Shop, LLC.</P>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="main.js"></script>
+
+      </footer>
+    </div>
+  </div>
+  </body>
+</html>
